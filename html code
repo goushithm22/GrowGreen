@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowGreen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">GrowGreen</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#contact-us">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <input type="checkbox" id="toggle-search" class="toggle-search">
+                <label for="toggle-search" class="search-icon">&#128269;</label>
+                <a href="#"><i class="user-icon">👤</i></a>
+                <a href="#"><i class="cart-icon">🛒</i></a>
+            </div>
+            <div id="search-bar" class="search-bar">
+                <input type="text" placeholder="Search for plants...">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <main id="home">
+        <section class="hero">
+            <div class="background">
+                <img src="pictures/rubbertree-1.jpg" alt="User" class="testimonial-image">
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-text">
+                    <h3>Debra D. Gilliam</h3>
+                    <div class="rating">4.8 ★★★★★</div>
+                    <p>“Absolutely love this plant app! It's like having a green thumb in your pocket. So easy to use, with tons of helpful tips and reminders for plant care.”</p>
+                </div>        
+            </div>
+            <div class="hero-content">
+                <p class="h1">Make Your Home Beautiful With Plants</p>
+                <p>Unlock the secrets of greenery and infuse every corner with life and serenity. From vibrant blooms to lush foliage, let your home reflect the timeless elegance of nature's bounty.</p>
+                <div class="plant-cards">
+                    <div class="plant-card">
+                        <img src="pictures/plantpic1.png" alt="Plant 1">
+                        <button>→</button>
+                    </div>
+                    <div class="plant-card">
+                        <img src="pictures/plantpic2.png" alt="Plant 2">
+                        <button>→</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="catalog hidden">
+        <h1>Our Plant Collection</h1>
+        <div class="plant-grid">
+            <div class="plant-item">
+                <img src="pictures/fiddle leaf fig.jpg" alt="Fiddle Leaf Fig">
+                <h3>Fiddle Leaf Fig</h3>
+                <p>&#8377 30</p>
+            </div>
+            <div class="plant-item">
+                <img src="pictures/snake plant.jpg" alt="Snake Plant">
+                <h3>Snake Plant</h3>
+                <p>&#8377 60</p>
+            </div>
+            <div class="plant-item">
+                <img src="pictures/monstera plant.jpg" alt="Monstera">
+                <h3>Monstera</h3>
+                <p>&#8377 70</p>
+            </div>
+            <div class="plant-item">
+                <img src="pictures/aloe vera.webp" alt="Aloe Vera">
+                <h3>Aloe Vera</h3>
+                <p>&#8377 10</p>
+            </div>
+            <div class="plant-item">
+                <img src="pictures/peace lily.png" alt="Peace Lily">
+                <h3>Peace Lily</h3>
+                <p>&#8377 20</p>
+            </div>
+            <div class="plant-item">
+                <img src="pictures/bamboo plant.webp" alt="Bamboo Palm">
+                <h3>Bamboo Palm</h3>
+                <p>&#8377 18    </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us" class="contact-us">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Whether you have a question about our products, need assistance, or just want to share your love for plants, we're here to help.</p>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
